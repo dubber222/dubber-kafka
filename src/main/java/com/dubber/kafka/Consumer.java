@@ -42,6 +42,7 @@ public class Consumer extends ShutdownableThread {
         //指定消费某个分区的资源，就不需要subscribe了。
         /*TopicPartition p0 = new TopicPartition(KafkaProperties.TOPIC, 0);
         this.consumer.assign(Arrays.asList(p0));*/
+
     }
 
     @Override
