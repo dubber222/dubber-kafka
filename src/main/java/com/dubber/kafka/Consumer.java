@@ -55,10 +55,10 @@ public class Consumer extends ShutdownableThread {
     }
 
     public static void main(String[] args) {
-        /*Consumer consumer = new Consumer();
-        consumer.start();*/
+        Consumer consumer = new Consumer();
+        consumer.start();
         //计算consumer group对应的hash值,__consumer_offsets 的文件位置
-        System.out.println(Math.abs("DemoGroup1".hashCode())%50);
+        /*System.out.println(Math.abs("DemoGroup1".hashCode())%50);*/
 
     }
 }
