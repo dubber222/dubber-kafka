@@ -29,10 +29,8 @@ public class MyPartition implements Partitioner {
         List<PartitionInfo> partitionerList = cluster.partitionsForTopic(topic);
         //获得所有的分区
         int numPart = partitionerList.size();
-
         //获得key的 hashcode
         int hashCode = key.hashCode();
-
         return Math.abs(hashCode%numPart);
     }
 
